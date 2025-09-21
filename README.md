@@ -1,6 +1,5 @@
-# beginner-python-projects
 
-# Beginner Python Projects 🎯
+# Beginner Python Projects 
 
 This repository is a collection of my beginner-friendly Python projects.  
 I built these to practice programming fundamentals (with a little guidance) while having fun with small games and utility applications.  
@@ -19,10 +18,3 @@ Curently in my first year pursuing Electronics and Communications Engineering wi
 | [Alarm Clock] | Set alarms with Python’s `datetime` and `time` modules. | 
 
 ---
-
-## 🚀 How to Run Any Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/python-beginner-projects.git
-   cd python-beginner-projects
