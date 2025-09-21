@@ -1,0 +1,35 @@
+#Word scramble game
+import random
+import words_repository
+        #words_repository (from the file you’ll make) is not a list, it’s a dictionary of categories → words.
+        #You can’t directly random.choice a dict.
+        #You need to first pick a category, then a word inside it.
+def scrambled_word():
+    category = random.choice(list(words_repository.words.keys()))
+    answer = random.choice(words_repository.words[category])
+    scrambled = "".join(random.sample(answer, len(answer)))
+    return category, answer, scrambled
+
+def main():
+    category, answer, scrambled= scrambled_word()
+    print("Welcome to Word Scramble!")
+    print(f"Your category is {category}")
+    print(f"Unscramble the word: {scrambled}")
+
+    guess = input("Enter your guess: ").lower()
+
+    if not guess.isalpha():
+        print("Invalid entry! Try again!")
+
+    if guess == answer:
+        print("Congratulations! That is correct")
+    else:
+        print(f"Wrong guess! Correct word was {answer}")
+
+if __name__ == '__main__':
+    main()
+
+
+
+
+
